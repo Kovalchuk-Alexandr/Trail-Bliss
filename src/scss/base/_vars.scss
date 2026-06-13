@@ -1,0 +1,33 @@
+:root {
+	--container-width : 1300px;
+	--container-width-fluid : 1928px;
+	--container-padding: 30px;
+	
+	--page-bg: #fff;
+	--text-color: #181818;
+	--text-white:  #fff;
+	--text-muted: #707070;
+	
+	--accent: #35aff4;
+	--link-color:  rgba(54, 56, 56, 0.9);
+
+	/* Colors  */
+	--black: #161616;
+	--gray-dark: #454444;
+	--orange: #ed952b;
+	--yellow: #fec86e;
+	--cream: #fbf1d6;
+	--sky: #d3f5fe;
+	--white: #fff;
+	--gray-lite: #fafafa;
+	--cream-lite: #fefcf7;
+
+	/*  Fonts  */
+	--font-family: "Manrope", sans-serif;
+}
+
+%title-font {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	color: var(--color-scheme-dark-transparent);
+}

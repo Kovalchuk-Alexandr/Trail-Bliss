@@ -1,0 +1,83 @@
+.header {
+    padding-top: 40px;
+}
+
+
+.header__row {
+    position: relative;
+    border-radius: 60px;
+    padding: 24px 40px;
+    // width: 1240px;
+    height: 89px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+    background: var(--cream-lite);
+}
+
+.header-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-list__item {
+    padding: 5px;
+}
+
+.header__link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    // left: 0;
+    right: 0;           // ← по умолчанию прижат к правому краю
+    left: auto;         // ← при наведении будет отжат от левого края
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    left: 0;            // ← при hover переключаемся на левый край
+    right: auto;        // ← при hover отключаем прижатие к правому краю
+    width: 100%;
+}
+
+
+@include tablet {
+    .header__row, .header-list {gap: 20px;}
+    .header__link {font-size: 16px;}
+}
+
+@include mobileL {
+    .header {padding-top: 30px;}
+    .header__row {
+        padding: 22px 30px;
+        height: 76px;}
+    .header-list {display: none;}
+}
+
+@include mobileM {
+    .header {padding-top: 20px;}
+    .header__row {border-radius: 60px;
+        padding: 20px;
+        height: 66px;}
+    .header-list {display: none;}
+}
