@@ -4,25 +4,31 @@
     line-height: 110%;
     color: var(--black);
 
-	@include laptop {
-		font-size: 60px;
-	}
+		// @include laptop {
+		// 	font-size: 60px;
+		// }
 
-	@include tablet {
-		font-size: 48px;
-	}
+		// @include tablet {
+		// 	font-size: 48px;
+		// }
 
-	@include mobile {
-		font-size: 32px;
-		text-align: center;
-	}
+		// @include mobile {
+		// 	font-size: 32px;
+		// 	text-align: center;
+		// }
 }
 
 .title-2 {
-	margin: 1em 0 0.5em;
-	font-size: 48px;
 	font-weight: 700;
+	font-size: 48px;
+	line-height: 120%;
+	color: var(--black);
 	font-family: var(--font-family);
+
+	// @include mobile {
+	// 	font-size: 26px;
+	// 	text-align: center;
+	// }
 }
 
 .title-3 {
@@ -37,33 +43,26 @@
     font-size: 24px;
     color: var(--gray-dark);
 
-	@include laptop {
-		font-size: 22px;
-	}
+	// @include laptop {
+	// 	font-size: 22px;
+	// }
 
-	@include tablet {
-		font-size: 20px;
-	}
+	// @include tablet {
+	// 	font-size: 20px;
+	// }
 
-	@include mobile {
-		font-size: 18px;
-		text-align: center;
-	}
+	// @include mobile {
+	// 	font-size: 18px;
+	// 	text-align: center;
+	// }
 }
 
 .subtitle-2 {
-	margin: 1em 0 0.5em;
-	font-size: 20x;
+	font-size: 20px;
 	font-weight: 700;
 	font-family: var(--font-family);
 }
 
-.title-4 {
-	margin: 1em 0 0.5em;
-	font-size: 18px;
-	font-weight: 700;
-	font-family: var(--font-titles);
-}
 
 .text {
 	font-weight: 450;
@@ -78,4 +77,25 @@
 	@include mobile {
 		font-size: 16px;
 	}
+}
+
+@include laptop {
+	.title-1 {font-size: 60px;}
+	.title-2 {font-size: 48px;}
+	.subtitle-1 {font-size: 24px;}
+	.subtitle-2 {font-size: 20px;}
+}
+
+@include tablet {
+	.title-1 {font-size: 48px;}
+	.title-2 {font-size: 32px;}
+	.subtitle-1 {font-size: 22px;}
+	.subtitle-2 {font-size: 18px;}
+}
+
+@include mobile {
+	.title-1 {font-size: 32px; text-align: center;}
+	.title-2 {font-size: 26px; text-align: center;}
+	.subtitle-1 {font-size: 18px; text-align: center;}
+	.subtitle-2 {font-size: 16px; text-align: center;}
 }

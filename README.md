@@ -4,11 +4,9 @@
 
 ***Макет Figma***: [https://www.figma.com/design/wVArJNdgtX8Fs5U95n7Ute/](https://www.figma.com/design/wVArJNdgtX8Fs5U95n7Ute/)
 
-[See Demo](https://apple-com-zeta.vercel.app/)
+[See Demo](https://kovalchuk-alexandr.github.io/Trail-Bliss/)
 
-## Обновленная версия 2025 / 03 с заменой task на function
-
-### Предустановки
+## Технологии
 
 - HTML,
 - SCSS,
@@ -92,6 +90,10 @@ const pictureHTMLConfig = {
     noPictureDel: false, // if 'true' remove classes for 'img' tag given in 'noSource:[]'
 };
 ```
+
+#### Important!!!
+
+Все строковые данные (атрибуты) внутри `<img>` или `<picture>` оборачивать только в двойные кавычки `""`. При одинарных - ошибка.
 
 ##### Svg Sprite
 
