@@ -1,0 +1,23 @@
+.uikit-color {
+	display: inline-block;
+	padding: 12px;
+	border-radius: 8px;
+	background-color: var(--gray-lite);
+}
+.uikit-color__palete {
+	margin-bottom: 12px;
+	width: 136px;
+	height: 136px;
+	border-radius: 6px;
+}
+.uikit-color__title {
+	margin-bottom: 4px;
+	font-size: 18px;
+}
+.uikit-color__code {
+	margin-bottom: 4px;
+	font-size: 16px;
+}
+.uikit-color__variable {
+	font-size: 16px;
+}

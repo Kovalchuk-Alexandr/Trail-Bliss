@@ -1,10 +1,44 @@
 .feature-card {
+    position: relative;
     padding: 20px;
     border-radius: 16px;
     background: var(--sky);
 
+    overflow: hidden;
+
     @include tablet {
         // grid-column: auto !important;
+    }
+}
+
+.feature-card .feature-card__background{
+    transition: transform 0.4s ease;
+    /* Для сохранения качества при медленной анимации */
+    image-rendering: optimizeQuality;
+}
+
+.feature-card:hover .feature-card__background {
+    transform: scale(1.03);
+}
+
+.feature-card__link{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 16px;
+
+    transition: all 0.3s ease-in;
+    
+    &:hover {
+        // background-color: rgba(92, 92, 92, 0.342);
+        // outline: 1px solid rgba(168, 168, 168, 0.25);
+        box-shadow: inset 0px 0px 5px rgba(167, 167, 167, 0.3);
+        outline: 1px solid rgba(16, 16, 16, 0.6);
+        box-shadow: inset 0px 0px 5px rgba(125, 125, 125, 0.75);
     }
 }
 
@@ -42,6 +76,10 @@
         justify-content: flex-end;
     }
 
+    .feature-card__play {
+        margin: auto;
+    }
+
     @include mobileL {
         gap: 16px;
     }
@@ -65,10 +103,10 @@
 }
 
 .feature-card__play {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
 }
 
 .feature-card__title {

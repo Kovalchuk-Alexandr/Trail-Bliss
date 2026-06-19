@@ -1,0 +1,47 @@
+[
+	{
+		"title": "White",
+		"code": "#FFFFFF",
+		"var": "var(--white)"
+	},
+	{
+		"title": "Grey lite",
+		"code": "#FAFAFA",
+		"var": "var(--gray-lite)"
+	},
+	{
+		"title": "Grey dark",
+		"code": "#454444",
+		"var": "var(--gray-dark)"
+	},
+	{
+		"title": "Black",
+		"code": "#161616",
+		"var": "var(--black)"
+	},
+	{
+		"title": "Orange",
+		"code": "#ED952B",
+		"var": "var(--orange)"
+	},
+	{
+		"title": "Yellow",
+		"code": "#FEC86E",
+		"var": "var(--yellow)"
+	},
+	{
+		"title": "Cream",
+		"code": "#FBF1D6",
+		"var": "var(--cream)"
+	},
+	{
+		"title": "Cream lite",
+		"code": "#F7F5F0",
+		"var": "var(--cream-lite)"
+	},
+	{
+		"title": "Sky",
+		"code": "#D3F5FE",
+		"var": "var(--sky)"
+	}
+]
