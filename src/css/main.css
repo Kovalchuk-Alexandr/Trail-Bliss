@@ -161,13 +161,6 @@ legend {
   font-style: normal;
 }
 @font-face {
-  font-family: static;
-  font-display: swap;
-  src: url("./fonts/static.woff2") format("woff2"), url("./fonts/static.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
   font-family: Manrope;
   font-display: swap;
   src: url("./fonts/Manrope-VariableFont_wght.woff2") format("woff2"), url("./fonts/Manrope-VariableFont_wght.woff") format("woff");
@@ -181,6 +174,17 @@ legend {
   font-weight: 600;
   font-style: normal;
 }
+@font-face {
+  font-family: static;
+  font-display: swap;
+  src: url("./fonts/static.woff2") format("woff2"), url("./fonts/static.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  border: 1px solid lightgray;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -2166,7 +2170,7 @@ button.swiper-pagination-bullet {
     align-items: center;
     gap: 20px;
   }
-  .mission__grid--2 {
+  .mission__grid--reverse {
     flex-direction: column;
   }
   .mission__content {
