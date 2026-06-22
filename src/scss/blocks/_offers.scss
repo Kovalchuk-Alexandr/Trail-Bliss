@@ -1,0 +1,41 @@
+.offers {
+    padding-block: 80px;
+    background: var(--cream-lite);
+
+}
+
+.offers__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 30px;
+
+    margin-bottom: 52px;
+}
+
+.offers__title {
+    max-width: 21ch;
+}
+
+.offers__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+
+@include tablet {
+    .offers {padding-block: 60px;}
+}
+
+@include mobile {
+    .offers {padding-block: 40px;}
+}
+
+@include mobileM {
+    .offers__heading {
+        flex-direction: column;
+    }
+}
+    

@@ -1,0 +1,29 @@
+.control-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--black);
+	border-radius: 99px;
+	color: var(--black);
+
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	&:active {
+		background-color: var(--gray-dark);
+		color: var(--white);
+	}
+}
+
+.control-btn__icon {
+	width: 12px;
+	height: 24px;
+	fill: currentColor;
+}

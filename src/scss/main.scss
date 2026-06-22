@@ -11,6 +11,7 @@
 @import './base/utils'; // Тест на ошибку
 @import './base/containers';
 @import './base/buttons';
+@import './base/docs';
 @import './base/mobile-nav-btn';
 @import './base/mobile-nav';
 @import './base/sticky-footer';
@@ -23,12 +24,15 @@
 @import './blocks/feature';
 @import './blocks/feature-card';
 @import './blocks/mission';
+@import './blocks/offers';
+@import './blocks/offer-card';
 @import './blocks/footer';
 @import './blocks/logo';
 @import './blocks/icons';
 @import './blocks/titles';
 @import './blocks/uikit';
 @import './blocks/uikit-color';
+@import './blocks/control-btn';
 
 /* =============  Media ================= */
 /* @import './base/media.css'; */

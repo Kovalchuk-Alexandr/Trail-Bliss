@@ -6,33 +6,33 @@ import Swiper from "swiper/bundle";
 
 function swiper() {
     /* Initialize Swiper */
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper("#offers-swiper", {
         // Optional parameters
         // direction: "vertical",
-        // spaceBetween: 30,
-        // loop: true,
-        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        slidesPerView: "auto",
         // freeMode: true,
         grabCursor: true,
-        effect: "fade",
+        // effect: "fade",
         lazy: true,
         speed: 1000, //Скорость прокрутки
         /* Autoplay */
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            reverseDirection: true, //обратное направление
-        },
+        // centeredSlides: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //     reverseDirection: true, //обратное направление
+        // },
         breakpoints: {
             // 510: {
             //     slidesPerView: 'auto',
             //     spaceBetween: 26,
             // },
-            768: {
-                slidesPerView: "auto",
-                spaceBetween: 33,
-            },
+            // 800: {
+            //     slidesPerView: 1,
+            //     // spaceBetween: 33,
+            // },
             // 1160: {
             //     slidesPerView: 'auto',
             //     spaceBetween: 33,
@@ -47,8 +47,8 @@ function swiper() {
 
         // Navigation arrows
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: "#offers__control-next",
+            prevEl: "#offers__control-prev",
         },
 
         // And if we need scrollbar

@@ -46,11 +46,15 @@
 
 
 	@include desktop {
-		padding: 0 50px;
+		padding: 0 30px;
 	}
 
 	@include laptop {
 		padding: 0 30px;
+	}
+
+	@include tablet {
+		padding: 0 20px;
 	}
 
 	@include mobile {

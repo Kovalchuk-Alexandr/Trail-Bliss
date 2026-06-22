@@ -10,11 +10,13 @@
 
 - HTML,
 - SCSS,
-- Gulp, file-include
+- Gulp, file-include, file-loop
 - JS,
 - Swiper slider
 - Scrollreveal
 - Мобильная адаптация
+- Дизайн-система
+- Компонентный подход
 - Возможность указать каталог сборки build / docs (по-умолчанию docs)
 
 ##### Установить зависимости:

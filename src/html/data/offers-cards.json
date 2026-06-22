@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Explore Dubai’s Hidden Gems",
+		"desc": "Discover breathtaking landscapes with curated nature travel events.",
+		"badge": "September",
+		"price": "$999",
+		"img": "01.jpg"
+	},
+	{
+		"title": "Best time in Europe 2025",
+		"desc": "Discover breathtaking landscapes with curated nature travel events.",
+		"badge": "October",
+		"price": "$500",
+		"img": "02.jpg"
+	},
+	{
+		"title": "Explore Dubai’s Hidden Gems",
+		"desc": "Discover breathtaking landscapes with curated nature travel events.",
+		"badge": "September",
+		"price": "$999",
+		"img": "03.jpg"
+	},
+	{
+		"title": "Best time in Europe 2025",
+		"desc": "Discover breathtaking landscapes with curated nature travel events.",
+		"badge": "October",
+		"price": "$500",
+		"img": "04.jpg"
+	}
+]

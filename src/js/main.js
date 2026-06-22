@@ -1,4 +1,4 @@
-// console.log('main test!!!');
+// console.log("main test!!!");
 
 // Галерея и лайтбоксы от Fancybox
 // import { Fancybox } from '@fancyapps/ui';
@@ -9,15 +9,13 @@
 // });
 
 // Мобильная навигация
-import mobileNav from './modules/mobile-nav.js';
+import mobileNav from "./modules/mobile-nav.js";
 mobileNav();
 
 // Scroll Reveal
-import scrollRevealFunc from './modules/scroll-reveal.js'
+import scrollRevealFunc from "./modules/scroll-reveal.js";
 // scrollRevealFunc();
 
 // Swiper Slider
-import swiper from './modules/swiper.js';
+import swiper from "./modules/swiper.js";
 swiper();
-
-
