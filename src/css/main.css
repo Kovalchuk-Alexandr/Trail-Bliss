@@ -152,13 +152,6 @@ legend {
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("./fonts/Manrope-Medium.woff2") format("woff2"), url("./fonts/Manrope-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: Manrope;
-  font-display: swap;
   src: url("./fonts/Manrope-Bold.woff2") format("woff2"), url("./fonts/Manrope-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -166,15 +159,15 @@ legend {
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("./fonts/Manrope-Regular.woff2") format("woff2"), url("./fonts/Manrope-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("./fonts/Manrope-Medium.woff2") format("woff2"), url("./fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("./fonts/Manrope-SemiBold.woff2") format("woff2"), url("./fonts/Manrope-SemiBold.woff") format("woff");
-  font-weight: 600;
+  src: url("./fonts/Manrope-Regular.woff2") format("woff2"), url("./fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -191,6 +184,17 @@ legend {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: Manrope;
+  font-display: swap;
+  src: url("./fonts/Manrope-SemiBold.woff2") format("woff2"), url("./fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  border: 1px solid lightgray;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -2421,6 +2425,69 @@ button.swiper-pagination-bullet {
     font-size: 32px;
   }
 }
+.testimonials {
+  padding-block: 80px;
+  background: var(--cream-lite);
+}
+
+.testimonials__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 30px;
+}
+
+.testimonials__heading {
+  max-width: 397px;
+}
+
+.testimonials__title {
+  margin-bottom: 24px;
+}
+
+.testimonials__desc {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray-dark);
+}
+
+.testimonials__controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 1050px) {
+  .testimonials {
+    padding-block: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .testimonials__wrapper {
+    flex-direction: column;
+  }
+  .testimonials__heading {
+    text-align: center;
+  }
+  .testimonials__desc {
+    margin-bottom: 20px;
+  }
+  .testimonials__controls {
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .testimonials {
+    padding-block: 40px;
+  }
+  .testimonials__desc {
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
 .footer {
   padding-block: 75px 100px;
   background: var(--efbd68);
@@ -2844,6 +2911,66 @@ button.swiper-pagination-bullet {
   fill: currentColor;
 }
 
+.card-review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  padding: 20px 30px;
+  border-radius: 12px;
+  background-color: var(--white);
+  box-shadow: 0 20px 50px rgba(22, 22, 22, 0.08);
+}
+
+.card-review__quote {
+  width: 32px;
+  height: 32px;
+}
+
+.card-review__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gray-dark);
+}
+
+.card-review__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.card-review__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-review__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-review__author-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.card-review__author-location {
+  font-size: 14px;
+  color: var(--gray-dark);
+}
+
+@media (max-width: 700px) {
+  .card-review {
+    max-width: 100%;
+  }
+}
 /* =============  Media ================= */
 /* @import './base/media.css'; */
 /* No styles code below. Only in modules */
