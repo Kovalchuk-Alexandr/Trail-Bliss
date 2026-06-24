@@ -166,21 +166,14 @@ legend {
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("./fonts/Manrope-Regular.woff2") format("woff2"), url("./fonts/Manrope-Regular.woff") format("woff");
+  src: url("./fonts/Manrope-VariableFont_wght.woff2") format("woff2"), url("./fonts/Manrope-VariableFont_wght.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url("./fonts/Manrope-VariableFont_wght.woff2") format("woff2"), url("./fonts/Manrope-VariableFont_wght.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: static;
-  font-display: swap;
-  src: url("./fonts/static.woff2") format("woff2"), url("./fonts/static.woff") format("woff");
+  src: url("./fonts/Manrope-Regular.woff2") format("woff2"), url("./fonts/Manrope-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -189,6 +182,13 @@ legend {
   font-display: swap;
   src: url("./fonts/Manrope-SemiBold.woff2") format("woff2"), url("./fonts/Manrope-SemiBold.woff") format("woff");
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: static;
+  font-display: swap;
+  src: url("./fonts/static.woff2") format("woff2"), url("./fonts/static.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 * {
@@ -1766,6 +1766,31 @@ button.swiper-pagination-bullet {
   }
 }
 
+/* Testimonials swiper */
+.testimonials__swiper-slider {
+  max-width: 726px;
+}
+@media (max-width: 1130px) {
+  .testimonials__swiper-slider {
+    width: 633px;
+  }
+}
+
+#testimonials-swiper .swiper-slide {
+  max-width: 351px;
+}
+
+@media (max-width: 1050px) {
+  .testimonials__swiper-slider {
+    max-width: 100%;
+    width: unset;
+  }
+}
+@media (max-width: 550px) {
+  #testimonials-swiper .swiper-slide {
+    max-width: 100%;
+  }
+}
 /* =============  Blocks ================= */
 .header {
   padding-top: 40px;
@@ -2439,6 +2464,7 @@ button.swiper-pagination-bullet {
 
 .testimonials__heading {
   max-width: 397px;
+  min-width: 307px;
 }
 
 .testimonials__title {
@@ -2462,8 +2488,6 @@ button.swiper-pagination-bullet {
   .testimonials {
     padding-block: 60px;
   }
-}
-@media (max-width: 800px) {
   .testimonials__wrapper {
     flex-direction: column;
   }
@@ -2916,6 +2940,7 @@ button.swiper-pagination-bullet {
   flex-direction: column;
   gap: 16px;
   max-width: 360px;
+  height: 309px;
   padding: 20px 30px;
   border-radius: 12px;
   background-color: var(--white);
@@ -2932,6 +2957,12 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   line-height: 1.6;
   color: var(--gray-dark);
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
 }
 
 .card-review__author {

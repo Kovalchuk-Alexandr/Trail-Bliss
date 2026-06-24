@@ -4,6 +4,7 @@
 	gap: 16px;
 
 	max-width: 360px;
+	height: 309px;
 	padding: 20px 30px;
 	border-radius: 12px;
 	background-color: var(--white);
@@ -20,6 +21,13 @@
 	font-size: 16px;
 	line-height: 1.6;
 	color: var(--gray-dark);
+
+	display: -webkit-box;
+    -webkit-line-clamp: 6; // кол-во строк
+	line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1; // чтобы текст занимал всё свободное место, а автор прижался вниз
 }
 
 .card-review__author {

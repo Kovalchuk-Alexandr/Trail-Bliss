@@ -12,6 +12,7 @@
 
 .testimonials__heading {
     max-width: 397px;
+    min-width: 307px;
 }
 
 .testimonials__title {
@@ -35,15 +36,14 @@
 
 @include tablet {
     .testimonials {padding-block: 60px;}
-    
-}
-@include mobileL {
     .testimonials__wrapper {
         flex-direction: column;
     }
     .testimonials__heading {text-align: center;}
     .testimonials__desc {margin-bottom: 20px;}
     .testimonials__controls {justify-content: center;}
+}
+@include mobileL {
     
 }
 
