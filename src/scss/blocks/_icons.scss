@@ -35,3 +35,20 @@
 	}
 }
 
+.icon--social {
+	width: 20px;
+	height: 20px;
+	fill: var(--black);
+}
+
+.icon--contact {
+	width: 40px;
+	height: 40px;
+	fill: var(--black);
+
+	@include mobile {
+		width: 32px;
+		height: 32px;
+	}
+}
+

@@ -1,0 +1,20 @@
+<section class="faq">
+    <div class="container">
+        <h2 class="faq__title title-2">Unforgettable Moments with unique Events</h2>
+        <div class="faq__grid">
+            <div class="faq__picture">
+                <picture>
+                    <source media="(max-width: 399px)" srcset="./img/faq/img-400.jpg">
+                    <source media="(min-width: 400px)" srcset="./img/faq/img.jpg">
+                    <img class="faq__img" src="./img/faq/img.jpg" alt="FAQ Image">
+                </picture>
+                <!-- <img src="./img/faq/img.jpg" alt="" class="faq__img"> -->
+            </div>
+            <div class="faq__content">
+                <div class="accordion-container" id="faq-accordion">
+                    @@loop('components/accordion-item.html', './data/faq-accordion.json')
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

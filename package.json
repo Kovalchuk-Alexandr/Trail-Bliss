@@ -42,6 +42,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "@fancyapps/ui": "^5.0.36",
+    "accordion-js": "^3.4.1",
     "jquery": "^3.7.1"
   }
 }

@@ -1,4 +1,4 @@
-// console.log("main test!!!");
+console.log("main test!!!");
 
 // Галерея и лайтбоксы от Fancybox
 // import { Fancybox } from '@fancyapps/ui';
@@ -19,3 +19,18 @@ import scrollRevealFunc from "./modules/scroll-reveal.js";
 // Swiper Slider
 import swiper from "./modules/swiper.js";
 swiper();
+
+// Accordion
+import Accordion from "./modules/accordion.js";
+// import Accordion from "accordion-js";
+// import "accordion-js/dist/accordion.min.css";
+
+// User options
+// new Accordion("#faq-accordion");
+new Accordion("#faq-accordion", {
+    duration: 400,
+    showMultiple: true,
+    onOpen: function (currentElement) {
+        // console.log(currentElement);
+    },
+});

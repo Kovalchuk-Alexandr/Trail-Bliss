@@ -1,6 +1,6 @@
 # Проект Trail Bliss. Адаптивная вёрстка лендинга с нуля. HTML, SCSS, Gulp
 
-Создаём современный лендинг Travel Bliss — от чистой папки до адаптива! Подключаем Gulp, разбираем SCSS-структуру, верстаем header и hero-блок, подбираем шрифты и цвета из Figma. Подходит для новичков, которые хотят понять весь процесс верстки сайта с нуля.
+Современный лендинг Travel Bliss — от чистой папки до адаптива! Подключаем Gulp, разбираем SCSS-структуру, верстаем header и hero-блок, подбираем шрифты и цвета из Figma.
 
 ***Макет Figma***: [https://www.figma.com/design/wVArJNdgtX8Fs5U95n7Ute/](https://www.figma.com/design/wVArJNdgtX8Fs5U95n7Ute/)
 
@@ -14,8 +14,9 @@
 - JS,
 - Swiper slider
 - Scrollreveal
+- Accordion
 - Мобильная адаптация
-- Дизайн-система
+- Дизайн-система (UI Kit)
 - Компонентный подход
 - Возможность указать каталог сборки build / docs (по-умолчанию docs)
 
@@ -35,6 +36,19 @@ gulp
 
 ```bash
 gulp build
+```
+
+##### Accordion. Install the package & import files
+
+[NPM accordion-js](https://www.npmjs.com/package/accordion-js)
+
+```bash
+npm i accordion-js
+```
+
+```js
+import Accordion from "accordion-js";
+import "accordion-js/dist/accordion.min.css";
 ```
 
 #### Fonts
