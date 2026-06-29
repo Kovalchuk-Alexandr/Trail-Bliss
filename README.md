@@ -12,8 +12,7 @@
 - SCSS,
 - Gulp, file-include, file-loop
 - JS,
-- Swiper slider
-- Scrollreveal
+- Два Swiper slider
 - Accordion
 - Мобильная адаптация
 - Дизайн-система (UI Kit)

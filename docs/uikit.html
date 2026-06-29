@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Стартовый шаблон | ВебКадеми</title>
+	<title>UI Kit</title>
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="stylesheet" href="./css/style.min.css">
 
@@ -44,7 +44,7 @@
 
             <ul class="header-list">
                 <li class="header-list__item link">
-                    <a href="#!" class="header__link">Testimonial</a>
+                    <a href="test.html" class="header__link">Testimonial</a>
                 </li>
                 <li class="header-list__item link">
                     <a href="#!" class="header__link">FAQ</a>
@@ -65,6 +65,45 @@
 
 </header>
 
+	<!-- ======= Мобильная навигация  ============================ -->
+<div class="mobile-nav ">
+	<!-- Если используются разные кнопки для откр/закр -->
+	<!-- <button class="mobile-close-btn">
+		<img src="./img/ui/close_round.svg" alt="Close button" width="24" height="24">
+	</button> -->
+
+		<div class="nav__btn-set">
+		<button class="nav__btn">
+			<a href="#!" class="button-inset">Contact Us</a>
+		</button>
+
+		<!-- Mobile button open -->
+		<!-- <button class="mobile-nav-btn">
+			<div class="mobile-nav-btn__icon"></div>
+		</button> -->
+	</div>
+
+	<ul class="mobile-nav-list">
+		<li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+		<li class="mobile-nav-item"><a href="docs.html" class="mobile-nav-link">Docs</a></li>
+		<li class="mobile-nav-item"><a href="uikit.html" class="mobile-nav-link">UI kit</a></li>
+		<li class="mobile-nav-item"><a href="#!" class="mobile-nav-link">Testimonial</a></li>
+		<li class="mobile-nav-item"><a href="#!" class="mobile-nav-link">FAQ</a></li>
+	</ul>
+
+	<a href="index.html" class="logo">
+    <span class="logo__icon">
+        <img class="no-picture" src="./img/leaf.svg" alt="Logo">
+    </span>
+    <span class="logo__text">Trail Bliss</span>
+</a>
+	<!-- <a href="#!" class="nav__logo">
+		<img src="./img/logo.svg" alt="Logo Powfections">
+	</a> -->
+</div>
+
+<!-- ======= Fade для мобильной навигации  =================== -->
+<div class="mobile-nav-fade"></div>
 	<main class="uikit">
 	<div class="container">
 		<h1 class="title-1">UI kit</h1>
@@ -338,99 +377,7 @@
 </section>
 	</div>
 </main>
-	 <footer class="footer ">
-	<div class="footer__plate">
-		<div class="container">
-			<!-- Columns -->
-			<div class="footer__columns">
-				<div class="footer__adress">
-					<div class="footer__adress-logo">
-						<a href="index.html" class="logo">
-    <span class="logo__icon">
-        <img class="no-picture" src="./img/leaf.svg" alt="Logo">
-    </span>
-    <span class="logo__text">Trail Bliss</span>
-</a>
-					</div>
-					<address class="footer__adress-content">2118 Thornridge Cir. Syracuse, Connecticut 35624</address>
-				</div>
-				<div class="footer__column">
-					<h4 class="footer-nav-title">Contact</h4>
-					<ul class="footer-nav-list">
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">hello@trailbliss.com</a></li>
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">(319) 555-0115</a></li>
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">(225) 555-0118</a></li>
-					</ul>
-				</div>
-				<div class="footer__column">
-					<h4 class="footer-nav-title">Quick links</h4>
-					<ul class="footer-nav-list">
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">Contact</a></li>
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">Refund policy</a></li>
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">Terms and Conditions</a></li>
-					</ul>
-				</div>
-				<div class="footer__column">
-					<h4 class="footer-nav-title">Follow us</h4>
-					<ul class="footer-nav-list">
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">Facebook</a></li>
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">Instagram</a></li>
-						<li class="footer-nav-item"><a href="#!" class="footer-nav-link">YouTube</a></li>
-					</ul>
-				</div>
-				
-				<div class="footer__contact">
-					<span class="footer__contact-text subtitle-1">We are available all the time. Contact us today!</span>
-					<a href="#!" class="footer__contact-link">
-						<svg class="icon--contact">
-							<use href="./img/svgsprite/sprite.symbol.svg#svgicons--arrow-up-right-circle"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<!-- // Columns -->
-		</div>
-
-		<div class="container-fluid">
-			<!-- Copyright -->
-			<div class="footer__copyright">
-				<p class="footer__copyright-text">© 2026. All rights reserved.</p>
-				<ul class="footer__copyright-list">
-					<li class="footer__copyright-item">
-						<a href="#!" class="footer__copyright-link">
-							<svg class="icon--social">
-								<use href="./img/svgsprite/sprite.symbol.svg#svgicons--social-01"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer__copyright-item">
-						<a href="#!" class="footer__copyright-link">
-							<svg class="icon--social">
-								<use href="./img/svgsprite/sprite.symbol.svg#svgicons--social-02"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer__copyright-item">
-						<a href="#!" class="footer__copyright-link">
-							<svg class="icon--social">
-								<use href="./img/svgsprite/sprite.symbol.svg#svgicons--social-03"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer__copyright-item">
-						<a href="#!" class="footer__copyright-link">
-							<svg class="icon--social">
-								<use href="./img/svgsprite/sprite.symbol.svg#svgicons--social-04"></use>
-							</svg>
-						</a>
-					</li>
-					
-				</ul>
-			</div>
-			<!-- // Copyright -->
-		 </div>
-	</div>
-</footer>
+	
 	<script src="./js/index.bundle.js"></script>
 </body>
 

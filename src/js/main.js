@@ -13,7 +13,7 @@ import mobileNav from "./modules/mobile-nav.js";
 mobileNav();
 
 // Scroll Reveal
-import scrollRevealFunc from "./modules/scroll-reveal.js";
+// import scrollRevealFunc from "./modules/scroll-reveal.js";
 // scrollRevealFunc();
 
 // Swiper Slider
@@ -27,10 +27,15 @@ import Accordion from "./modules/accordion.js";
 
 // User options
 // new Accordion("#faq-accordion");
-new Accordion("#faq-accordion", {
-    duration: 400,
-    showMultiple: true,
-    onOpen: function (currentElement) {
-        // console.log(currentElement);
-    },
-});
+const initAccordion = document.querySelector("#faq-accordion");
+
+if (initAccordion) {
+    new Accordion("#faq-accordion", {
+        duration: 400,
+        showMultiple: true,
+        onOpen: function (currentElement) {
+            // console.log(currentElement);
+        },
+    });
+}
+
